@@ -18,12 +18,18 @@ tail -n +2 measures.csv > measures-headless.csv
 tail -n +2 survey_responses.csv > survey_responses-headless.csv
 
 hdfs dfs -mkdir /user/w205/hospital_compare
+
 hdfs dfs -mkdir /user/w205/hospital_compare/hospital
 hdfs dfs -put hospitals-headless.csv /user/w205/hospital_compare/hospital
+
 hdfs dfs -mkdir /user/w205/hospital_compare/effective_care
 hdfs dfs -put effective_care-headless.csv /user/w205/hospital_compare/effective_care
-hdfs dfs -put readmissions-headless.csv /user/w205/hospital_compare
+
+hdfs dfs -mkdir /user/w205/hospital_compare/readmissions
+hdfs dfs -put readmissions-headless.csv /user/w205/hospital_compare/readmissions
+
 hdfs dfs -mkdir /user/w205/hospital_compare/measures
 hdfs dfs -put measures-headless.csv /user/w205/hospital_compare/measures
+
 hdfs dfs -mkdir /user/w205/hospital_compare/survey
 hdfs dfs -put survey_responses-headless.csv /user/w205/hospital_compare/survey
