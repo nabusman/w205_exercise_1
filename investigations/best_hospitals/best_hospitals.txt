@@ -1,0 +1,16 @@
+The best hospitals were picked by using the raw scores of timely and effective care and manipulating them to extract the top 10 hospitals that not only have high average scores but consistently high scores with low variability. To do this calcuation the average was taken of all the scores, then divided by the range to exclude anomalous scores and finally only hospitals receiving at least 30 ratings were considered. This method enables extraction of the following consistent high performers:
+
++-----------+-----------------+---------+---------+-------------+-----+-----------------+
+|provider_id|    average_score|max_score|min_score|total_samples|range|    effectiveness|
++-----------+-----------------+---------+---------+-------------+-----+-----------------+
+|     141336|             99.9|      100|       99|          929|    1|             99.9|
+|     05114F|           99.875|      100|       99|         1839|    1|           99.875|
+|     420102|99.81818181818181|      100|       99|         4098|    1|99.81818181818181|
+|     301302|            99.75|      100|       99|          344|    1|            99.75|
+|     450875|99.66666666666667|      100|       99|         6778|    1|99.66666666666667|
+|     390278|             95.5|       96|       95|          913|    1|             95.5|
+|     321302|             87.5|       88|       87|          138|    1|             87.5|
+|     261327|             70.5|       71|       70|           37|    1|             70.5|
+|     450851|            99.85|      100|       98|         4771|    2|           49.925|
+|     170183|99.81818181818181|      100|       98|         1604|    2|49.90909090909091|
++-----------+-----------------+---------+---------+-------------+-----+-----------------+

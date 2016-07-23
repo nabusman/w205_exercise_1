@@ -1,0 +1,16 @@
+The best states were picked by using the raw scores of timely and effective care and manipulating them to extract the top 10 states that not only have high average scores but consistently high scores with low variability. To do this calcuation the average was taken of all the scores, then divided by the range to exclude anomalous scores and finally only states receiving at least 30 ratings were considered. This method enables extraction of the following consistent high performers:
+
++-----+-----------------+---------+---------+-------------+-----+-------------------+
+|state|    average_score|max_score|min_score|total_samples|range|      effectiveness|
++-----+-----------------+---------+---------+-------------+-----+-------------------+
+|   GU|84.17647058823529|      100|       27|          741|   73|  1.153102336825141|
+|   ND|86.85329341317366|      226|        0|       308643|  226| 0.3843066080228923|
+|   ID|92.10898661567877|      289|        0|       562255|  289|0.31871621666324834|
+|   MT|91.01217391304348|      287|        0|       364126|  287|0.31711558854718985|
+|   WI|90.14336033814723|      286|        0|      2529818|  286| 0.3151865746089064|
+|   WY|          87.8125|      279|        0|       242100|  279| 0.3147401433691756|
+|   MN|88.02532833020638|      281|        0|      2438826|  281|0.31325739619290527|
+|   SD|88.90959409594096|      288|        0|       328291|  288|0.30871386838868387|
+|   NE|90.52054794520548|      311|        0|       640304|  311|0.29106285512927804|
+|   UT|89.50756811301716|      315|        0|       932004|  315| 0.2841510098825942|
++-----+-----------------+---------+---------+-------------+-----+-------------------+
